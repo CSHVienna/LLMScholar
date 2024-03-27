@@ -4,7 +4,7 @@
 
 This project aims to infer the gender of scientists using a novel approach that combines two Large Language Model (LLM) technologies, on of which with Web Search Retrieve-Augmented-Generatation (RAG). The process integrates Command-r from Cohere to provide accurate and context-aware scientists's information and the open source model Mixtral8x7b for gender classification. 
 
-## Configuration
+### Configuration
 
 Before running this project, you need to set up an environment variable for your API key. The keys are free (with rate-time limits) and essential for accessing and utilizing the open source model on Groq's servers (https://console.groq.com/docs/models) or Cohere's models (https://docs.cohere.com/reference/chat). To configure your environment:
 
@@ -13,7 +13,7 @@ Before running this project, you need to set up an environment variable for your
 
 Please replace `your-api-key-here` with your actual API key. Choose either `GROQ` or `COHERE` based on which API you are utilizing. Ensure to restart your terminal session after setting the environment variable to apply the changes.
 
-## Development Environment Setup
+### Development Environment Setup
 
 1. **Install Python & VS Code**: Ensure Python is installed, and install Visual Studio Code along with the Python extension.
 2. **Open the Project**: Open the project folder in VS Code.
