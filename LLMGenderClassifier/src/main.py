@@ -11,7 +11,9 @@ def main():
 
     start_time = time.time() 
 
-    df = pd.read_csv('/Users/danielebarolo/Desktop/Unipd/4th Semester (Intership)/Code/Trials/Infer Gender with LLMs/Data/Cache_data/test_df.csv')
+    data_path = "/Users/danielebarolo/LLMScholar/LLMGenderClassifier"
+
+    df = pd.read_csv(data_path + "/data/test_df.csv")
 
     df[['prompt_web_search', 'web_search', 'url', 'prompt_gender', 'gender', 'gender_motivation']] = ''
     
@@ -34,11 +36,13 @@ def main():
         df.at[index, 'gender_motivation'] = extract_info[1]
 
     
-    df.to_csv('/Users/danielebarolo/Desktop/Unipd/4th Semester (Intership)/Code/Trials/Infer Gender with LLMs/Data/Cache_data/enriched_test_df.csv', index=False)
+    df.to_csv(data_path + "/data/enriched_test_df.csv", index=False)
 
     end_time = time.time()  
-    
-    print(f"Execution time: {(end_time - start_time)/60} minutes") 
+
+    print ("#################### FINISHED ####################")    
+    print(f"Execution TIME: {((end_time - start_time)/60):.2f} minutes") 
+    print ("##################################################")
 
 if __name__ == "__main__":
     main()
