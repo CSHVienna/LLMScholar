@@ -1,0 +1,1016 @@
+prompt,answer_1,names_in_aps_1,answer_2,names_in_aps_2,answer_3,names_in_aps_3,answer_4,names_in_aps_4,semantic_similarity_score
+"[{'role': 'user', 'content': 'Provide a list of scientists who have published in the American Physics Society during the specified time in JSON format. \n    The list must adhere to the following criterion: Top 25 scientists.'}]","{
+"" Scientists"": [
+{
+""name"": ""John Pendry"",
+""affiliation"": ""Imperial College London"",
+""publications"": [
+{
+""title"": ""Controlling electromagnetic fields"",
+""journal"": ""Physical Review Letters"",
+""year"": 2006
+}
+]
+},
+{
+""name"": ""Charles Bennett"",
+""affiliation"": ""IBM"",
+""publications"": [
+{
+""title"": ""Teleporting an unknown quantum state via classical and einstein-podolsky-rosen channels"",
+""journal"": ""Physical Review Letters"",
+""year"": 1993
+}
+]
+},
+{
+""name"": ""Stephen Hawking"",
+""affiliation"": ""University of Cambridge"",
+""publications"": [
+{
+""title"": ""Hawking radiation and black hole thermodynamics"",
+""journal"": ""Physical Review D"",
+""year"": 1975
+}
+]
+},
+{
+""name"": ""Leonard Susskind"",
+""affiliation"": ""Stanford University"",
+""publications"": [
+{
+""title"": ""The concept of the propagator"",
+""journal"": ""Physical Review"",
+""year"": 1964
+}
+]
+},
+{
+""name"": ""Kip Thorne"",
+""affiliation"": ""California Institute of Technology"",
+""publications"": [
+{
+""title"": ""Gravitational waves from precessing binaries: Hypothesis testing with LIGO"",
+""journal"": ""Physical Review D"",
+""year"": 1996
+}
+]
+},
+{
+""name"": ""Edward Witten"",
+""affiliation"": ""Institute for Advanced Study"",
+""publications"": [
+{
+""title"": ""Quantum field theory, Grassmannians, and algebraic curves"",
+""journal"": ""Communications in Mathematical Physics"",
+""year"": 1993
+}
+]
+},
+{
+""name"": ""Lisa Randall"",
+""affiliation"": ""Harvard University"",
+""publications"": [
+{
+""title"": ""An alternative to compactification"",
+""journal"": ""Physical Review Letters"",
+""year"": 1999
+}
+]
+},
+{
+""name"": ""Michio Kaku"",
+""affiliation"": ""City College of New York"",
+""publications"": [
+{
+""title"": "" Hawking radiation and black holes"",
+""journal"": ""Physics Letters B"",
+""year"": 1974
+}
+]
+},
+{
+""name"": ""Brian Greene"",
+""affiliation"": ""Columbia University"",
+""publications"": [
+{
+""title"": ""Dynamical Casimir effect in four-dimensional electrodynamics"",
+""journal"": ""Physical Review Letters"",
+""year"": 1997
+}
+]
+},
+{
+""name"": ""Gerard 't Hooft"",
+""affiliation"": ""Utrecht University"",
+""publications"": [
+{
+""title"": ""Gauge theories and quantum fields"",
+""journal"": ""Annalen der Physik"",
+""year"": 1972
+}
+]
+},
+{
+""name"": ""Frank Wilczek"",
+""affiliation"": ""Massachusetts Institute of Technology"",
+""publications"": [
+{
+""title"": ""Asymptotic freedom in quantum chromodynamics"",
+""journal"": ""Physical Review Letters"",
+""year"": 1973
+}
+]
+},
+{
+""name"": ""David Gross"",
+""affiliation"": ""University of California, Santa Barbara"",
+""publications"": [
+{
+""title"": ""Asymptotically free gauge theories. I"",
+""journal"": ""Physical Review D"",
+""year"": 1973
+}
+]
+},
+{
+""name"": ""David Politzer"",
+""affiliation"": ""California Institute of Technology"",
+""publications"": [
+{
+""title"": ""Reliable perturbative results for strong interactions?"",
+""journal"": ""Physical Review Letters"",
+""year"": 1973
+}
+]
+},
+{
+""name"": ""Andrew Strominger"",
+""affiliation"": ""Harvard University"",
+""publications"": [
+{
+""title"": ""Black hole entropy in M-theory"",
+""journal"": ""Journal of High Energy Physics"",
+""year"": 1996
+}
+]
+},
+{
+""name"": ""Cumrun Vafa"",
+""affiliation"": ""Harvard University"",
+""publications"": [
+{
+""title"": ""String theory and black holes"",
+""journal"": ""Physics Reports"",
+""year"": 1997
+}
+]
+},
+{
+""name"": ""Joseph Polchinski"",
+""affiliation"": ""University of California, Santa Barbara"",
+""publications"": [
+{
+""title"": ""Dirichlet branes and ramond-ramond charges"",
+""journal"": ""Physical Review D"",
+""year"": 1995
+}
+]
+},
+{
+""name"": ""Lawrence Krauss"",
+""affiliation"": ""Arizona State University"",
+""publications"": [
+{
+""title"": ""The fifth force: A search for non-newtonian gravity"",
+""journal"": ""Physical Review Letters"",
+""year"": 1988
+}
+]
+},
+{
+""name"": ""Leon Lederman"",
+""affiliation"": ""Fermi National Accelerator Laboratory"",
+""publications"": [
+{
+""title"": ""The search for the Higgs boson"",
+""journal"": ""Scientific American"",
+""year"": 1989
+}
+]
+},
+{
+""name"": ""Martin Perl"",
+""affiliation"": ""Stanford Linear Accelerator Center"",
+""publications"": [
+{
+""title"": ""Evidence for a heavy electron"",
+""journal"": ""Physical Review Letters"",
+""year"": 1975
+}
+]
+},
+{
+""name"": ""Murray Gell-Mann"",
+""affiliation"": ""California Institute of Technology"",
+""publications"": [
+{
+""title"": ""The axial vector current in beta decay"",
+""journal"": ""Physical Review"",
+""year"": 1958
+}
+]
+},
+{
+""name"": ""Richard Feynman"",
+""affiliation"": ""California Institute of Technology"",
+""publications"": [
+{
+""title"": ""Space-time approach to non-relativistic quantum mechanics"",
+""journal"": ""Reviews of Modern Physics"",
+""year"": 1948
+}
+]
+},
+{
+""name"": ""Freeman Dyson"",
+""affiliation"": ""Institute for Advanced Study"",
+""publications"": [
+{
+""title"": ""The radiation theories of Tomonaga, Schwinger, and Feynman"",
+""journal"": ""Physical Review"",
+""year"": 1949
+}
+]
+},
+{
+""name"": ""Paul Dirac"",
+""affiliation"": ""University of Cambridge"",
+""publications"": [
+{
+""title"": ""The quantum theory of the electron"",
+""journal"": ""Proceedings of the Royal Society A"",
+""year"": 1928
+}
+]
+}
+]
+}
+
+Note: The list of scientists is not based on any specific criteria or ranking, it's a collection of well-known physicists who have published in the American Physical Society (APS) journals.","{'John Pendry': 'full name PRESENT', 'Charles Bennett': 'most similar name in APS: Charles H. Bennett', 'Stephen Hawking': 'full name PRESENT', 'Leonard Susskind': 'full name PRESENT', 'Kip Thorne': 'most similar name in APS: Kip S. Thorne', 'Edward Witten': 'full name PRESENT', 'Lisa Randall': 'full name PRESENT', 'Michio Kaku': 'full name PRESENT', 'Brian Greene': 'full name PRESENT', ""Gerard 't Hooft"": 'most similar name in APS: Gerard ’t Hooft', 'Frank Wilczek': 'full name PRESENT', 'David Gross': 'full name PRESENT', 'David Politzer': 'full name PRESENT', 'Andrew Strominger': 'full name PRESENT', 'Cumrun Vafa': 'full name PRESENT', 'Joseph Polchinski': 'full name PRESENT', 'Lawrence Krauss': 'full name PRESENT', 'Leon Lederman': 'most similar name in APS: Leon M. Lederman', 'Martin Perl': 'most similar name in APS: Martin L. Perl', 'Murray Gell-Mann': 'full name PRESENT', 'Richard Feynman': 'most similar name in APS: Richard P. Feynman', 'Freeman Dyson': 'full name PRESENT', 'Paul Dirac': 'most similar name in APS: Paul Dorain'}","{
+"" scientistics"": [
+{
+""name"": ""John Pendry"",
+""affiliation"": ""Imperial College London"",
+""count"": 15
+},
+{
+""name"": ""Charles Bennett"",
+""affiliation"": ""IBM"",
+""count"": 14
+},
+{
+""name"": ""Alain Aspect"",
+""affiliation"": ""École Polytechnique"",
+""count"": 13
+},
+{
+""name"": ""Antoine Georges"",
+""affiliation"": ""Collège de France"",
+""count"": 12
+},
+{
+""name"": ""Leonard Susskind"",
+""affiliation"": ""Stanford University"",
+""count"": 12
+},
+{
+""name"": ""Edward Witten"",
+""affiliation"": ""Institute for Advanced Study"",
+""count"": 11
+},
+{
+""name"": ""Frank Wilczek"",
+""affiliation"": ""Massachusetts Institute of Technology"",
+""count"": 11
+},
+{
+""name"": ""Juan Maldacena"",
+""affiliation"": ""Institute for Advanced Study"",
+""count"": 10
+},
+{
+""name"": ""Nathan Seiberg"",
+""affiliation"": ""Institute for Advanced Study"",
+""count"": 10
+},
+{
+""name"": ""Andrew Strominger"",
+""affiliation"": ""Harvard University"",
+""count"": 10
+},
+{
+""name"": ""Cumrun Vafa"",
+""affiliation"": ""Harvard University"",
+""count"": 10
+},
+{
+""name"": ""Lisa Randall"",
+""affiliation"": ""Harvard University"",
+""count"": 9
+},
+{
+""name"": ""Michal Misiorny"",
+""affiliation"": ""Jagiellonian University"",
+""count"": 9
+},
+{
+""name"": ""Gergely Zarand"",
+""affiliation"": ""Budapest University of Technology and Economics"",
+""count"": 9
+},
+{
+""name"": ""Steven Kivelson"",
+""affiliation"": ""Stanford University"",
+""count"": 8
+},
+{
+""name"": ""David Gross"",
+""affiliation"": ""University of California, Santa Barbara"",
+""count"": 8
+},
+{
+""name"": ""Jeffrey Goldstone"",
+""affiliation"": ""University of Massachusetts"",
+""count"": 8
+},
+{
+""name"": ""Michael Peskin"",
+""affiliation"": ""Stanford University"",
+""count"": 8
+},
+{
+""name"": ""John Schwarz"",
+""affiliation"": ""California Institute of Technology"",
+""count"": 8
+},
+{
+""name"": ""Ann Nelson"",
+""affiliation"": ""University of Washington"",
+""count"": 7
+},
+{
+""name"": ""Alexei Kitaev"",
+""affiliation"": ""California Institute of Technology"",
+""count"": 7
+},
+{
+""name"": ""Subir Sachdev"",
+""affiliation"": ""Harvard University"",
+""count"": 7
+},
+{
+""name"": ""Adrian Kent"",
+""affiliation"": ""Perimeter Institute for Theoretical Physics"",
+""count"": 6
+}
+]
+}
+
+Note: The above list is a sample of 25 scientists who have published in the American Physical Society and their contributions (""count"") are hypothetical and might not reflect the actual numbers.","{'John Pendry': 'full name PRESENT', 'Charles Bennett': 'most similar name in APS: Charles H. Bennett', 'Alain Aspect': 'full name PRESENT', 'Antoine Georges': 'full name PRESENT', 'Leonard Susskind': 'full name PRESENT', 'Edward Witten': 'full name PRESENT', 'Frank Wilczek': 'full name PRESENT', 'Juan Maldacena': 'full name PRESENT', 'Nathan Seiberg': 'full name PRESENT', 'Andrew Strominger': 'full name PRESENT', 'Cumrun Vafa': 'full name PRESENT', 'Lisa Randall': 'full name PRESENT', 'Michal Misiorny': 'most similar name in APS: Michal Lipson', 'Gergely Zarand': 'full name PRESENT', 'Steven Kivelson': 'full name PRESENT', 'David Gross': 'full name PRESENT', 'Jeffrey Goldstone': 'full name PRESENT', 'Michael Peskin': 'full name PRESENT', 'John Schwarz': 'most similar name in APS: John H. Schwarz', 'Ann Nelson': 'full name PRESENT', 'Alexei Kitaev': 'full name PRESENT', 'Subir Sachdev': 'full name PRESENT', 'Adrian Kent': 'full name PRESENT'}","I'm an text-based AI and I don't have real-time access to databases or the ability to directly query the American Physical Society's publication database. However, I can provide you with a general idea of how the JSON format would look like for such a list. You would need to obtain the actual data by querying the appropriate database or API.
+
+Here's an example of how the JSON format would look like for the top 25 scientists:
+
+```json
+[
+  {
+    ""name"": ""Scientist 1"",
+    ""publications"": 36,
+    ""total_citations"": 3200
+  },
+  {
+    ""name"": ""Scientist 2"",
+    ""publications"": 31,
+    ""total_citations"": 2950
+  },
+  // ... (other 23 scientists)
+]
+```
+
+In this example, I included the properties ""name"", ""publications"" (number of papers published in the American Physical Society), and ""total_citations"" (total number of citations for their papers published in the American Physical Society). You can modify the properties to suit your needs.
+
+To get this data, you'd need to query the American Physical Society's database or API, or an alternative source with access to this information. Make sure you follow the proper terms and conditions for data usage.",No names found,"{
+ ""scientists"": [
+ {
+ ""name"": ""John Pendry"",
+ ""affiliation"": ""Imperial College London"",
+ ""count"": 32,
+ ""latest_title"": ""Dielectric metasurfaces with stretched convex and concave foci""
+},
+{
+""name"": ""Lisa Pfefferle"",
+""affiliation"": ""Sandia National Laboratories"",
+""count"": 28,
+""latest_title"": ""Ultra-Low-Loss Plasmonic Nanweb Enables High-Curvature Sub-Wavelength Optics""
+},
+{
+""name"": ""Ferdinand Kuemmeth"",
+""affiliation"": ""Microsoft Station Q"",
+""count"": 27,
+""latest_title"": ""Spin-Orbit Physics Governing the Charge Density Response of Bilayer Graphene""
+},
+{
+""name"": ""Alexander High"",
+""affiliation"": ""Los Alamos National Laboratory"",
+""count"": 26,
+""latest_title"": ""Photonic crystal enhancement of terahertz absorption in graphene metasurfaces""
+},
+{
+""name"": ""Xiang Zhang"",
+""affiliation"": ""University of California, Berkeley"",
+""count"": 25,
+""latest_title"": ""Ultrafast Nonlinear Fano Resonance in a Metal-Insulator-Metal Waveguide-Cavity System""
+},
+{
+""name"": ""Jennifer Dionne"",
+""affiliation"": ""Stanford University"",
+""count"": 24,
+""latest_title"": ""Three-Dimensional Metamaterials with Space-Coiling Inductors for Optoelectronics""
+},
+{
+""name"": ""Tero Raeker"",
+""affiliation"": ""Lawrence Berkeley National Laboratory"",
+""count"": 24,
+""latest_title"": ""Solid-state cooling below 100 μK using a single-shot spin-exchange optical pumping cycle""
+},
+{
+""name"": ""Mete Atature"",
+""affiliation"": ""University of California, Berkeley"",
+""count"": 23,
+""latest_title"": ""Electrically driven ionization of an exciton in a monolayer semiconductor""
+},
+{
+""name"": ""Duygu Kuzum"",
+""affiliation"": ""University of California, Los Angeles"",
+""count"": 23,
+""latest_title"": ""Ultrafast all-optical diode based on graphene-silicon photonics""
+},
+{
+""name"": ""Jelena Vuckovic"",
+""affiliation"": ""Stanford University"",
+""count"": 23,
+""latest_title"": ""Ultrafast all-optical diode based on graphene-silicon photonics""
+},
+{
+""name"": ""Mark Lee"",
+""affiliation"": ""Lawrence Berkeley National Laboratory"",
+""count"": 22,
+""latest_title"": ""Sub-wavelength Imaging below the Diffraction Limit with a Silver Superlens""
+},
+{
+""name"": ""Shyqi Gjonaj"",
+""affiliation"": ""Harvard University"",
+""count"": 22,
+""latest_title"": ""Large Broadband and Tunable Faraday and Kerr Rotations in Antiferromagnetic Metal""
+},
+{
+""name"": ""Gaurav Bahl"",
+""affiliation"": ""Duke University"",
+""count"": 21,
+""latest_title"": ""Wireless and Non-Invasive Optical Stimulation and Recording of Spiking Activity in the Intact Mouse Brain""
+},
+{
+""name"": ""Paul Braun"",
+""affiliation"": ""University of Illinois at Urbana-Champaign"",
+""count"": 21,
+""latest_title"": ""Polarization-Selective Terahertz Metasurface Perfect Absorber Based on a Metal-Dielectric-Metal Waveguide""
+},
+{
+""name"": ""Nader Engheta"",
+""affiliation"": ""University of Pennsylvania"",
+""count"": 21,
+""latest_title"": ""Ultra-compact and broadband terahertz metamaterial absorber""
+},
+{
+""name"": ""Xiaoqin Li"",
+""affiliation"": ""University of Washington"",
+""count"": 21,
+""latest_title"": ""Ultrafast Optical Pumping and Probing of Dirac Plasmons in a Topological Insulator""
+},
+{
+""name"": ""YuHuang Wang"",
+""affiliation"": ""University of California, Los Angeles"",
+""count"": 21,
+""latest_title"": ""Large Broadband and Tunable Faraday and Kerr Rotations in Antiferromagnetic Metal""
+},
+{
+""name"": ""Zhelong Wang"",
+""affiliation"": ""University of California, Berkeley"",
+""count"": 20,
+""latest_title"": ""Ultrafast Nonlinear Fano Resonance in a Metal-Insulator-Metal Waveguide-Cavity System""
+},
+{
+""name"": ""Zhi-Xun Shen"",
+""affiliation"": ""Stanford University"",
+""count"": 20,
+""latest_title"": ""Spin-Orbit Physics Governing the Charge Density Response of Bilayer Graphene""
+},
+{
+""name"": ""Zhi-Xun Shen"",
+""affiliation"": ""SLAC National Accelerator Laboratory"",
+""count"": 20,
+""latest_title"": ""Spin-Orbit Physics Governing the Charge Density Response of Bilayer Graphene""
+},
+{
+""name"": ""Andrea Alu"",
+""affiliation"": ""University of Texas at Austin"",
+""count"": 19,
+""latest_title"": ""Polarization-Selective Terahertz Metasurface Perfect Absorber Based on a Metal-Dielectric-Metal Waveguide""
+},
+{
+""name"": ""Hongkun Park"",
+""affiliation"": ""Harvard University"",
+""count"": 19,
+""latest_title"": ""Electrically driven ionization of an exciton in a monolayer semiconductor""
+},
+{
+""name"": ""Xiang Zhang"",
+""affiliation"": ""University of California, Berkeley"",
+""count"": 19,
+""latest_title"": ""Ultrafast Nonlinear Fano Resonance in a Metal-Insulator-Metal Waveguide-Cavity System""
+}
+]
+}
+
+Note: The ""count"" field indicates the number of publications in the American Physical Society during the specified time. The ""latest_title"" field indicates the title of their latest publication.","{'John Pendry': 'full name PRESENT', 'Lisa Pfefferle': 'most similar name in APS: L. Pfeiffer', 'Ferdinand Kuemmeth': 'full name PRESENT', 'Alexander High': 'most similar name in APS: Alexander A. High', 'Xiang Zhang': 'full name PRESENT', 'Jennifer Dionne': 'full name PRESENT', 'Tero Raeker': 'most similar name in APS: T. Raker', 'Mete Atature': 'most similar name in APS: Mete Atatüre', 'Duygu Kuzum': 'most similar name in APS: Duygu Akbulut', 'Jelena Vuckovic': 'full name PRESENT', 'Mark Lee': 'full name PRESENT', 'Shyqi Gjonaj': 'most similar name in APS: Erion Gjonaj', 'Gaurav Bahl': 'full name PRESENT', 'Paul Braun': 'most similar name in APS: Paul V. Braun', 'Nader Engheta': 'full name PRESENT', 'Xiaoqin Li': 'full name PRESENT', 'YuHuang Wang': 'most similar name in APS: Yuguang Wang', 'Zhelong Wang': 'most similar name in APS: Zhong Wang', 'Zhi-Xun Shen': 'full name PRESENT', 'Andrea Alu': 'full name PRESENT', 'Hongkun Park': 'full name PRESENT'}",0.6522546
+"[{'role': 'user', 'content': 'Provide a list of scientists who have published in the American Physics Society during the specified time in JSON format. \n    The list must adhere to the following criterion: Scientists that have published between 1990 and 2000.'}]","{
+""physicists"": [
+{
+""name"": ""David J. Gross"",
+""publications"": [
+{
+""title"": ""The Heterotic String"",
+""publication_year"": 1985
+},
+{
+""title"": ""Superstring theory"",
+""publication_year"": 1988
+}
+]
+},
+{
+""name"": ""Edward Witten"",
+""publications"": [
+{
+""title"": ""Quantum Field Theory, Gravity And Strings"",
+""publication_year"": 1995
+},
+{
+""title"": ""String Theory And Black Holes"",
+""publication_year"": 1999
+}
+]
+},
+{
+""name"": ""Leonard Susskind"",
+""publications"": [
+{
+""title"": ""The Large N Limit Of Superconformal Field Theories And Supergravity"",
+""publication_year"": 1998
+},
+{
+""title"": ""Tensionless Strings"",
+""publication_year"": 2000
+}
+]
+},
+{
+""name"": ""Michio Kaku"",
+""publications"": [
+{
+""title"": ""String Theory And Minimum Length"",
+""publication_year"": 1991
+},
+{
+""title"": ""The Matrix Model And M-Theory"",
+""publication_year"": 1997
+}
+]
+},
+{
+""name"": ""Brian Greene"",
+""publications"": [
+{
+""title"": ""The Elegant Universe"",
+""publication_year"": 1999
+},
+{
+""title"": ""The Fabric Of The Cosmos"",
+""publication_year"": 2004
+}
+]
+}
+]
+}
+
+Note: The provided JSON data is a sample and may not contain accurate publication information for the specified physicists between 1990-2000. For accurate information, please refer to the American Physical Society's publication database.","{'David J. Gross': 'full name PRESENT', 'Edward Witten': 'full name PRESENT', 'Leonard Susskind': 'full name PRESENT', 'Michio Kaku': 'full name PRESENT', 'Brian Greene': 'full name PRESENT'}","{
+""physicists"": [
+{
+""name"": ""Charles H. Bennett"",
+""publications"": [
+{
+""title"": ""Mixed-state entanglement and quantum error correction"",
+""pub_year"": 1996
+},
+{
+""title"": ""How to teleport quantum states"",
+""pub_year"": 1993
+}
+]
+},
+{
+""name"": ""Richard P. Feynman"",
+""publications"": [
+{
+""title"": ""Quantum mechanical computers"",
+""pub_year"": 1985
+}
+]
+},
+{
+""name"": ""Stephen Hawking"",
+""publications"": [
+{
+""title"": ""Wormholes in spacetime"",
+""pub_year"": 1990
+}
+]
+},
+{
+""name"": ""Leon M. Lederman"",
+""publications"": [
+{
+""title"": ""The God particle"",
+""pub_year"": 1993
+}
+]
+},
+{
+""name"": ""Murray Gell-Mann"",
+""publications"": [
+{
+""title"": ""The Quark and the Jaguar"",
+""pub_year"": 1994
+}
+]
+}
+]
+}
+
+Note: The provided list is a sample and not the comprehensive list of physicists who have published in the American Physical Society between 1990 and 2000. Also, the publication details are not real.","{'Charles H. Bennett': 'full name PRESENT', 'Richard P. Feynman': 'full name PRESENT', 'Stephen Hawking': 'full name PRESENT', 'Leon M. Lederman': 'full name PRESENT', 'Murray Gell-Mann': 'full name PRESENT'}","{
+""physicists"": [
+{""name"": ""David J. Gross"", ""publications"": [""title1"", ""title2"", ""title3""]},
+{""name"": ""Frank Wilczek"", ""publications"": [""title4"", ""title5"", ""title6""]},
+{""name"": ""David Politzer"", ""publications"": [""title7"", ""title8"", ""title9""]},
+{""name"": ""Edward Witten"", ""publications"": [""title10"", ""title11"", ""title12""]},
+{""name"": ""Leonard Susskind"", ""publications"": [""title13"", ""title14"", ""title15""]},
+{""name"": ""Stephen Hawking"", ""publications"": [""title16"", ""title17"", ""title18""]}
+]
+}
+
+Note: The ""publications"" field in this JSON document is a placeholder and can be replaced with the actual list of publications for each physicist obtained from the American Physics Society. The given data is just an example and should not be used as actual information. You should obtain the actual data from a reliable source like the official website of the American Physical Society or through their published literature.","{'David J. Gross': 'full name PRESENT', 'Frank Wilczek': 'full name PRESENT', 'David Politzer': 'full name PRESENT', 'Edward Witten': 'full name PRESENT', 'Leonard Susskind': 'full name PRESENT', 'Stephen Hawking': 'full name PRESENT'}","{
+""physicists"": [
+""John Preskill"",
+""Leonard Susskind"",
+""Edward Witten"",
+""Stephen Hawking"",
+""Brian Greene"",
+""Kip Thorne"",
+""Gerard 't Hooft"",
+""David Gross"",
+""Frank Wilczek"",
+""David Politzer"",
+""Paul Steinhardt"",
+""Neil Turok"",
+""Lisa Randall"",
+""Michio Kaku"",
+""Stephen Adler"",
+""James Hartle"",
+""Murray Gell-Mann"",
+""George Smoot"",
+""Andrew Strominger"",
+""Cumrun Vafa"",
+""Joseph Polchinski"",
+""Stanley Deser"",
+""Roman Jackiw"",
+""Robert Brout"",
+""François Englert"",
+""Peter Higgs"",
+""Tom W. B. Kibble"",
+""Christopher Isham"",
+""John Ellis"",
+""Howard Georgi"",
+""Savas Dimopoulos"",
+""Lisa Randall"",
+""Raman Sundrum"",
+""Nima Arkani-Hamed"",
+""Gia Dvali"",
+""Savas Dimopoulos"",
+""Lisa Randall"",
+""John Hockney"",
+""Igor Klebanov"",
+""Alexander Polyakov"",
+""Oleg Gendelman"",
+""Evgeny Lifshitz"",
+""Anatoly Larkin"",
+""Valerii Pokrovskii""
+]
+}
+
+Note: This list includes some of the most notable physicists who have published papers in the American Physical Society (APS) journals between 1990 and 2000. However, it is not an exhaustive list. There are many other accomplished physicists who have published in APS journals during this time frame.","{'John Preskill': 'full name PRESENT', 'Leonard Susskind': 'full name PRESENT', 'Edward Witten': 'full name PRESENT', 'Stephen Hawking': 'full name PRESENT', 'Brian Greene': 'full name PRESENT', 'Kip Thorne': 'most similar name in APS: Kip S. Thorne', ""Gerard 't Hooft"": 'most similar name in APS: Gerard ’t Hooft', 'David Gross': 'full name PRESENT', 'Frank Wilczek': 'full name PRESENT', 'David Politzer': 'full name PRESENT', 'Paul Steinhardt': 'full name PRESENT', 'Neil Turok': 'full name PRESENT', 'Lisa Randall': 'full name PRESENT', 'Michio Kaku': 'full name PRESENT', 'Stephen Adler': 'most similar name in APS: Stephen L. Adler', 'James Hartle': 'full name PRESENT', 'Murray Gell-Mann': 'full name PRESENT', 'George Smoot': 'full name PRESENT', 'Andrew Strominger': 'full name PRESENT', 'Cumrun Vafa': 'full name PRESENT', 'Joseph Polchinski': 'full name PRESENT', 'Stanley Deser': 'full name PRESENT', 'Roman Jackiw': 'full name PRESENT', 'Robert Brout': 'full name PRESENT', 'François Englert': 'full name PRESENT', 'Peter Higgs': 'most similar name in APS: Peter W. Higgs', 'Tom W. B. Kibble': 'most similar name in APS: T. W. B. Kibble', 'Christopher Isham': 'most similar name in APS: Christopher Zaum', 'John Ellis': 'full name PRESENT', 'Howard Georgi': 'full name PRESENT', 'Savas Dimopoulos': 'full name PRESENT', 'Raman Sundrum': 'full name PRESENT', 'Nima Arkani-Hamed': 'full name PRESENT', 'Gia Dvali': 'full name PRESENT', 'John Hockney': 'most similar name in APS: John Downey', 'Igor Klebanov': 'full name PRESENT', 'Alexander Polyakov': 'most similar name in APS: Alexandre Polyakov', 'Oleg Gendelman': 'full name PRESENT', 'Evgeny Lifshitz': 'most similar name in APS: E. Lifshitz', 'Anatoly Larkin': 'full name PRESENT', 'Valerii Pokrovskii': 'most similar name in APS: Valery Pokrovsky'}",0.6180291
+"[{'role': 'user', 'content': 'Provide a list of scientists who have published in the American Physics Society during the specified time in JSON format. \n    The list must adhere to the following criterion: Scientists that have published in the field of Network Science.'}]","{
+""network_scientists"": [
+{""name"": ""Alan Mislove"", ""publications"": [""The Fragility of Internet Routing Under Prefix-Based Attacks"", ""Understanding the Resilience of the Internet to Large Scale Failures""]},
+{""name"": ""Sune Lehmann"", ""publications"": [""Community structure in large networks: Natural cluster emergence and community evolution"", ""Detecting the structual identity of communities""]},
+{""name"": ""Mark Newman"", ""publications"": [""The Structure and Function of Complex Networks"", ""Networks: An Introduction""]},
+{""name"": ""Faloutsos Christos"", ""publications"": [""On Power-Law Relationships of the Internet Topology"",""Self-Similarity and Fractal Nature of the Internet""]},
+{""name"": ""Sydney Skyler"", ""publications"": [""Modeling the Spread of Infectious Diseases on Complex Networks"", ""Community Structure in Networks""]}
+]
+}
+
+Note: The publications listed are for illustrative purposes and may not be accurate. Please verify the publications from a reliable source.","{'Alan Mislove': 'most similar name in APS: Alan Miller', 'Sune Lehmann': 'full name PRESENT', 'Mark Newman': 'most similar name in APS: Markus Niemann', 'Faloutsos Christos': 'most similar name in APS: Jason Christou', 'Sydney Skyler': 'most similar name in APS: Sydney Schreppler'}","{
+ ""network_scientists"": [
+ {
+ ""name"": ""Albert-László Barabási"",
+ ""publications"": [
+ {
+ ""title"": ""The architecture of complexity: Hierarchical organization of complex systems"",
+ ""publication_date"": ""1999-12-01"",
+ ""journal"": ""Physica A: Statistical Mechanics and its Applications""
+ },
+ {
+ ""title"": ""Error and attack tolerance of complex networks"",
+ ""publication_date"": ""2000-01-15"",
+ ""journal"": ""Physical Review Letters""
+ }
+ ]
+ },
+ {
+ ""name"": ""Duncan J. Watts"",
+ ""publications"": [
+ {
+ ""title"": ""A simple model of biological networks"",
+ ""publication_date"": ""2003-03-07"",
+ ""journal"": ""Physical Review E""
+ },
+ {
+ ""title"": ""Identifying influentials on the Internet"",
+ ""publication_date"": ""2007-06-22"",
+ ""journal"": ""Physical Review E""
+ }
+ ]
+ },
+ {
+ ""name"": ""Mark E. J. Newman"",
+ ""publications"": [
+ {
+ ""title"": ""Scientific collaboration networks. II. Shortest paths, weighted networks, and centrality"",
+ ""publication_date"": ""2001-06-15"",
+ ""journal"": ""Physical Review E""
+ },
+ {
+ ""title"": ""The structure of scientific collaboration networks"",
+ ""publication_date"": ""2001-03-01"",
+ ""journal"": ""Proceedings of the National Academy of Sciences""
+ }
+ ]
+ }
+ ]
+}
+
+Please note that this is a small sample list and actual results may vary depending on the specific search criteria and the time range you have specified. The American Physical Society's publication database, such as Physics Central, can be used to search for scientific articles and filter the results based on the required criteria.","{'Albert-László Barabási': 'full name PRESENT', 'Duncan J. Watts': 'full name PRESENT', 'Mark E. J. Newman': 'most similar name in APS: M. E. J. Newman'}","{
+""network_scientists"": [
+{""name"": ""Albert-László Barabási"", ""publications"": [""The architecture of complexity: Hierarchical organization and emergent properties in networks""]},
+{""name"": ""Mark E. J. Newman"", ""publications"": [""The structure and function of complex networks""]},
+{""name"": ""Duncan J. Watts"", ""publications"": [""The (new) science of networks""]},
+{""name"": ""Steven Strogatz"", ""publications"": [""Exploring complex networks""]},
+{""name"": ""Sune Lehmann"", ""publications"": [""Community structure in time-dependent and time-integrated networks""]},
+{""name"": ""Federico Varela"", ""publications"": [""The emergent mind""]},
+{""name"": ""Jürgen Jost"", ""publications"": [""Phase transitions in complex networks""]},
+{""name"": ""Yong-Yeol Ahn"", ""publications"": [""Strategic behavior in structured populations: The role of network reciprocity""]},
+{""name"": ""Sorin Solomon"", ""publications"": [""Random graphs and complex networks""]},
+{""name"": ""Francesco Vaccarino"", ""publications"": [""Networks of networks: The last frontier of complexity""]}
+]
+}
+
+Note: The publications listed are examples and may not be accurate for the specified time range in the American Physics Society. Please verify the publications and time range from a reliable source.","{'Albert-László Barabási': 'full name PRESENT', 'Mark E. J. Newman': 'most similar name in APS: M. E. J. Newman', 'Duncan J. Watts': 'full name PRESENT', 'Steven Strogatz': 'most similar name in APS: Steven H. Strogatz', 'Sune Lehmann': 'full name PRESENT', 'Federico Varela': 'most similar name in APS: Federico Valmorra', 'Jürgen Jost': 'full name PRESENT', 'Yong-Yeol Ahn': 'full name PRESENT', 'Sorin Solomon': 'full name PRESENT', 'Francesco Vaccarino': 'full name PRESENT'}","{
+ ""network_scientists"": [
+ {
+ ""name"": ""Alan Mislove"",
+ ""affiliation"": ""Northeastern University"",
+ ""publications"": [
+ {
+ ""title"": ""Characterizing the U.S. Router Landscape"",
+ ""publication_year"": 2011,
+ ""journal"": ""Physical Review E""
+ }
+ ]
+ },
+ {
+ ""name"": ""Sean Goggins"",
+ ""affiliation"": ""North Carolina State University"",
+ ""publications"": [
+ {
+ ""title"": ""Online social movement communities and the first presidential debate: A network analysis of the tweets of @MittRomney and @BarackObama"",
+ ""publication_year"": 2013,
+ ""journal"": ""Physical Review E""
+ }
+ ]
+ },
+ {
+ ""name"": ""Kathleen M. Carley"",
+ ""affiliation"": ""Carnegie Mellon University"",
+ ""publications"": [
+ {
+ ""title"": ""A computational model of interorganizational technology adoption, diffusion and utilization"",
+ ""publication_year"": 2012,
+ ""journal"": ""Journal of Computational Social Science""
+ }
+ ]
+ },
+ {
+ ""name"": ""Fil Menczer"",
+ ""affiliation"": ""Indiana University"",
+ ""publications"": [
+ {
+ ""title"": ""Social media and fake news in the 2016 U.S. election"",
+ ""publication_year"": 2018,
+ ""journal"": ""Journal of Complex Networks""
+ }
+ ]
+ },
+ {
+ ""name"": ""David Lazer"",
+ ""affiliation"": ""Northeastern University"",
+ ""publications"": [
+ {
+ ""title"": ""The parable of Google Flu: traps in big data analysis"",
+ ""publication_year"": 2014,
+ ""journal"": ""Science""
+ }
+ ]
+ }
+ ]
+}
+
+Note: This JSON list is just an example, and it may not reflect the actual list of scientists who have published in the American Physics Society in the field of Network Science during a specific time frame. It is always recommended to check the official publications or databases for accurate information.","{'Alan Mislove': 'most similar name in APS: Alan Miller', 'Sean Goggins': 'most similar name in APS: Sean Gavin', 'Kathleen M. Carley': 'most similar name in APS: Kathleen M. McCreary', 'Fil Menczer': 'most similar name in APS: Filippo Menczer', 'David Lazer': 'most similar name in APS: David Layzer'}",0.7255819
+"[{'role': 'user', 'content': 'Provide a list of scientists who have published in the American Physics Society during the specified time in JSON format. \n    The list must adhere to the following criterion: Possible statistical twins of Albert-László Barabási.'}]","{
+ ""scientists"": [
+ {
+ ""name"": ""Mark E. J. Newman"",
+ ""field"": ""Network Science, Physics"",
+ ""affiliation"": ""University of Michigan""
+ },
+{
+""name"": ""Santo Fortunato"",
+""field"": ""Physics, Complex Systems"",
+""affiliation"": ""Indiana University""
+},
+{
+""name"": ""Federico Bastián"",
+""field"": ""Statistical Physics"",
+""affiliation"": ""Pontifical Catholic University of Chile""
+},
+{
+""name"": ""Dmitri Krioukov"",
+""field"": ""Theoretical Physics, Network Science"",
+""affiliation"": ""University of California San Diego""
+},
+{
+""name"": ""Alex Arenas"",
+""field"": ""Network Science, Physics"",
+""affiliation"": ""University Rovira i Virgili""
+}
+]
+}
+
+Note: This list is not meant to be an exhaustive list of statistical twins of Albert-László Barabási, but rather a sample of scientists in the field of physics who have published in the American Physical Society and share similar research interests in complex systems, networks, and statistical physics.","{'Mark E. J. Newman': 'most similar name in APS: M. E. J. Newman', 'Santo Fortunato': 'full name PRESENT', 'Federico Bastián': 'most similar name in APS: Federico Bisti', 'Dmitri Krioukov': 'full name PRESENT', 'Alex Arenas': 'full name PRESENT'}","[
+{
+""name"": ""Peter Dodds"",
+""affiliation"": ""Department of Computer Science, University of Vermont"",
+""publications"": [
+{ ""title"": ""A generalized model for the citation distribution"", ""year"": 2003 },
+{ ""title"": ""An information-theoretic model of community structure in networks"", ""year"": 2005 }
+]
+},
+{
+""name"": ""Duncan J. Watts"",
+""affiliation"": ""Department of Engineering and Computer Science, Yale University"",
+""publications"": [
+{ ""title"": ""Identity preferences and social network structure"", ""year"": 2002 },
+{ ""title"": ""The 'cumulative advantage' mechanism of social network formation: A model and some data"", ""year"": 2006 }
+]
+},
+{
+""name"": ""Mark E. J. Newman"",
+""affiliation"": ""Department of Physics and Center for the Study of Complex Systems, University of Michigan"",
+""publications"": [
+{ ""title"": ""The structure of scientific collaboration networks"", ""year"": 2001 },
+{ ""title"": ""Scientific collaboration networks. II. Shortest paths, weights, and centrality"", ""year"": 2004 }
+]
+},
+{
+""name"": ""Sune Lehmann"",
+""affiliation"": ""Department of Applied Mathematics and Computer Science, Technical University of Denmark"",
+""publications"": [
+{ ""title"": ""A quantitative model of collaboration in science"", ""year"": 2006 },
+{ ""title"": ""Efficient identification of influential nodes in networks"", ""year"": 2008 }
+]
+},
+{
+""name"": ""Federico Battiston"",
+""affiliation"": ""Center for Information and Communication Technology, Fondazione Bruno Kessler"",
+""publications"": [
+{ ""title"": ""The control of spreading processes in complex networks"", ""year"": 2014 },
+{ ""title"": ""Influence maximization in temporal networks"", ""year"": 2018 }
+]
+}
+]
+
+Note: The list is a representation of possible statistical twins of Albert-László Barabási based on their research in the field of network science and notational similarity. Each entry includes the scientist's name, affiliation, and a selection of their publications in the American Physical Society.","{'Peter Dodds': 'most similar name in APS: Peter Bose', 'Duncan J. Watts': 'full name PRESENT', 'Mark E. J. Newman': 'most similar name in APS: M. E. J. Newman', 'Sune Lehmann': 'full name PRESENT', 'Federico Battiston': 'full name PRESENT'}","{
+""scientists"": [
+""hubert_m_madejski"",
+""laszlo_barabasi"",
+""mark_e_jansen"",
+""albert_l_lászló"",
+""frenk_js_smulders"",
+""rinke_verbin"",
+""albert_rivas"",
+""michael_m_milo"",
+""j_uri_s_onnela"",
+""alain_m_harel"",
+""zoltan_m_neda"",
+""sergey_d_neuhauser"",
+""zoltan_e_furedi"",
+""peter_m_cummings"",
+""m_granick"",
+""zoltan_zaborszky"",
+""andrew_d_jackson"",
+""m_mitrovic"",
+""m_zeng"",
+""z_nussinov"",
+""mark_e_j_newman"",
+""laszlo_kish""
+]
+}
+
+Note: This list is generated based on the assumption that a statistical twin of Albert-László Barabási could be a scientist with a similar name or having a name with overlapping characters. This is a very unscientific and naive approach to find ""statistical twins"". It does not take into account their field of study, achievements or any other attributes. Also, it is possible that some of these names do not refer to real persons or real scientists.","{'hubert_m_madejski': 'most similar name in APS: Hubert Simma', 'laszlo_barabasi': 'most similar name in APS: Kalobaran Maiti', 'mark_e_jansen': 'most similar name in APS: Hauke Hansen', 'albert_l_laszlo': 'most similar name in APS: Adalberto Fazzio', 'frenk_js_smulders': 'most similar name in APS: T. Gortenmulder', 'rinke_verbin': 'most similar name in APS: Virginie Serin', 'albert_rivas': 'most similar name in APS: Alberto Oliva', 'michael_m_milo': 'most similar name in APS: Michael Sammon', 'j_uri_s_onnela': 'most similar name in APS: Luis Bonilla', 'alain_m_harel': 'most similar name in APS: Savan Kharel', 'zoltan_m_neda': 'most similar name in APS: Zoltan Néda', 'sergey_d_neuhauser': 'most similar name in APS: Jürgen Neuhaus', 'zoltan_e_furedi': 'most similar name in APS: Zoltan Neufeld', 'peter_m_cummings': 'most similar name in APS: Peter T. Cummings', 'm_granick': 'most similar name in APS: S. Granick', 'zoltan_zaborszky': 'most similar name in APS: Konstanze Boretzky', 'andrew_d_jackson': 'most similar name in APS: Andrew Jackson', 'm_mitrovic': 'most similar name in APS: S. Mitrovic', 'm_zeng': 'most similar name in APS: Peng', 'z_nussinov': 'most similar name in APS: S Nussinov', 'mark_e_j_newman': 'most similar name in APS: Markus Heinemann', 'laszlo_kish': 'most similar name in APS: Laszlo Tisza'}","{
+ ""scientists"": [
+ {
+ ""name"": ""Annalisa Scremchi"",
+ ""field"": ""Condensed Matter Physics"",
+ ""publications"": [
+ {
+ ""title"": ""Emergence of scaling in complex networks"",
+ ""journal"": ""Physical Review Letters"",
+ ""year"": 2018
+ }
+ ]
+ },
+ {
+ ""name"": ""Peter Fronczak"",
+ ""field"": ""Statistical Physics"",
+ ""publications"": [
+ {
+ ""title"": ""Universality of the network growth dynamics"",
+ ""journal"": ""Physical Review E"",
+ ""year"": 2019
+ }
+ ]
+ },
+ {
+ ""name"": ""Susan Holmes"",
+ ""field"": ""Biological Physics"",
+ ""publications"": [
+ {
+ ""title"": ""Scale-free networks in biology"",
+ ""journal"": ""Physical Biology"",
+ ""year"": 2017
+ }
+ ]
+ },
+ {
+ ""name"": ""Federico Cabriolu"",
+ ""field"": ""Statistical Mechanics"",
+ ""publications"": [
+ {
+ ""title"": ""Statistical laws of human dynamics"",
+ ""journal"": ""Physical Review X"",
+ ""year"": 2018
+ }
+ ]
+ }
+ ]
+}
+
+Note: The above list of scientists and their publications are fictional and created for the purpose of this question. They do not represent real individuals or their actual publications. The concept of ""statistical twins"" is also not well-defined and is used here in a loose sense to refer to scientists who have published on similar topics as Albert-László Barabási, such as network science, complex systems, and statistical physics.","{'Annalisa Scremchi': 'most similar name in APS: Annalisa Bracco', 'Peter Fronczak': 'most similar name in APS: Piotr Fronczak', 'Susan Holmes': 'most similar name in APS: Susan Nelmes', 'Federico Cabriolu': 'most similar name in APS: Federico Carollo'}",0.73866796
