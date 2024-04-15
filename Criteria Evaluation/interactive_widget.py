@@ -11,6 +11,12 @@ class AdherenceEvaluation:
         self.df = df
         self.index = index
         self.texts = [answer for answer in self.df.loc[self.index, [f"answer_{i}" for i in range(1, 5)]]]
+        self.names_count = []
+        for answer in self.df.loc[self.index, [f"names_in_aps_{i}" for i in range(1, 5)]]:
+            if answer == "No names found":
+                self.names_count.append(0)
+            else:
+                self.names_count.append(len(ast.literal_eval(answer).keys()))
         self.current_index = 0
         self.results = {'Adherence': []} # Store the adherence scores
         self.save_path = save_path # Path to save the results
@@ -22,11 +28,12 @@ class AdherenceEvaluation:
 
         # Extract the prompt text using ast.literal_eval for safety
         prompt_text = ast.literal_eval(self.df.at[self.index, 'prompt'])[0]['content']
+        variable_text = prompt_text.split("The list must adhere to the following criterion: ")[-1]
         # Creating the HTML display for the prompt
         prompt_display_html = f"""
         <div style="margin: 20px; padding: 10px; background-color: #f9f9f9; border-left: 6px solid #ccc;">
             <h2 style="color: #333;">Prompt:</h2>
-            <p style="font-size: 18px; color: #555;">{prompt_text}</p>
+            <p style="font-size: 18px; color: #555;">"Provide a list of scientists who have published in the American Physics Society during the specified time in JSON format. The list must adhere to the following criterion: <strong> {variable_text}</strong></p>
         </div>
         """
         
@@ -55,8 +62,8 @@ class AdherenceEvaluation:
         self.prompt_display = widgets.HTML(value=prompt_display_html)
         
         # Initialize texts and other interactive components
-        self.texts = [answer for answer in self.df.loc[self.index, [f"answer_{i}" for i in range(1, 5)]]]
         self.text_display = widgets.HTML(value="")
+        self.counter_display = widgets.HTML(value="")
         self.title = widgets.HTML(value=f"<b>Answer 1:</b>")
         
         # Initialize slider and button with respective functionalities
@@ -73,7 +80,9 @@ class AdherenceEvaluation:
     def update_text_display(self):
         if self.current_index < len(self.texts):
             self.text_display.value = f"<div style='height: 300px; overflow-y: auto;'>{self.texts[self.current_index]}</div>"
+            self.counter_display.value = f"<div style='color: #555; font-size: 14px;'><strong>Names Count:</strong> {self.names_count[self.current_index]}</div>"
             self.title.value = f"<b>Answer {self.current_index + 1}:</b>"
+            
 
     def on_confirm_clicked(self, b):
         # Handle confirm button click: update display or end evaluation
@@ -99,7 +108,7 @@ class AdherenceEvaluation:
 
     def display(self):
         # Combine all widgets into the layout and display it
-        layout = widgets.VBox([self.prompt_display, self.instruction_text, self.title, self.text_display, self.rating_instruction, self.rating_line])
+        layout = widgets.VBox([self.prompt_display, self.instruction_text, self.title, self.text_display, self.counter_display, self.rating_instruction, self.rating_line])
         display(layout)
         self.update_text_display()
 
@@ -110,20 +119,28 @@ class ConsistencyEvaluation:
         self.df = df
         self.index = index
         self.texts = [answer for answer in self.df.loc[self.index, [f"answer_{i}" for i in range(1, 5)]]]
+        self.names = []
+        for answer in self.df.loc[self.index, [f"names_in_aps_{i}" for i in range(1, 5)]]:
+            if answer == "No names found":
+                self.names.append({})
+            else:
+                self.names.append(ast.literal_eval(answer))
         self.titles = ["Answer 1", "Answer 2", "Answer 3", "Answer 4"]
         self.semscore = self.df.loc[self.index, 'semantic_similarity_score']
         self.current_index = 0
-        self.results = {'Consistency': []} # Store the consistency scores
+        self.results = {'Formal_Consistency': [], 'Names_Consistency': []} # Store the consistency scores
         self.save_path = save_path # Path to save the results
         self.id = id
         self.setup_widgets()
         self.update_text_display()
+        self.flag = 0
 
     def setup_widgets(self):
         self.instruction_text = widgets.HTML(f"""
         <div style="margin: 20px; padding: 10px; background-color: #eef9f9; border-left: 6px solid #77cccc;">
             <h2 style="color: #333;">Task Instructions:</h2>
             <p>Your task is to evaluate the similarity of the four provided answers. This criterion aims at assessing the clarity of the prompt, which shall yield consistent results across multiple executions.</p>
+            <p>You will have first to assess how similar are the answers formally, and then how similar are the names suggested.</p>
             <ul>
                 <li>Review all four answers, focusing on their similarity to each other.</li>
                 <li>Rate the consistency from one (not similar at all) to ten (extremely similar).</li>
@@ -135,22 +152,52 @@ class ConsistencyEvaluation:
 
         self.text_display = widgets.HTML(value="")
         self.title = widgets.HTML(value=f"<b>{self.titles[self.current_index]}:</b>")
-        self.consistency_rating = widgets.IntSlider(value=5, min=1, max=10, step=1, description='CONSISTENCY:', style={'description_width': 'initial'}, layout={'width': '50%'})
-        self.rating_instruction = widgets.HTML(value="<b>Are the outputs very similar to each other? Please provide a (unique) consistency score:</b>")
-        self.confirm_button = widgets.Button(description='Confirm', button_style='success', layout={'width': '20%'})
-        self.confirm_button.on_click(self.lock_slider)
+        self.formal_consistency_rating = widgets.IntSlider(value=5, min=1, max=10, step=1, description='(formal) CONSISTENCY:', style={'description_width': 'initial'}, layout={'width': '50%'})
+        self.first_rating_instruction = widgets.HTML(value="<b>Are the outputs very similar to each other? Please provide a (unique) consistency score:</b>")
+        self.formal_confirm_button = widgets.Button(description='Confirm', button_style='success', layout={'width': '20%'})
+        self.formal_confirm_button.on_click(lambda b: self.lock_slider(b, "formal"))
 
         self.left_button = widgets.Button(description="--", disabled=True)
         self.right_button = widgets.Button(description="Answer 2")
         self.left_button.on_click(self.on_left_clicked)
         self.right_button.on_click(self.on_right_clicked)
 
-        self.rating_line = widgets.HBox([self.consistency_rating, self.confirm_button])
+        self.first_rating_line = widgets.HBox([self.formal_consistency_rating, self.formal_confirm_button])
         self.navigation_box = widgets.HBox([self.left_button, self.right_button])
-        self.layout = widgets.VBox([self.instruction_text, self.title, self.text_display, self.navigation_box, self.rating_instruction, self.rating_line])
+
+        self.names_1_df = pd.DataFrame([names for names in self.names[0].keys()], columns=['Names'])
+        self.names_2_df = pd.DataFrame([names for names in self.names[1].keys()], columns=['Names'])
+        self.names_3_df = pd.DataFrame([names for names in self.names[2].keys()], columns=['Names'])
+        self.names_4_df = pd.DataFrame([names for names in self.names[3].keys()], columns=['Names'])
+
+        def sort_df_by_last_name(df):
+            df_sorted = df.assign(Last_Name=df['Names'].apply(lambda x: x.split()[-1])).sort_values(by='Last_Name')
+            df_sorted.drop(columns=['Last_Name'], inplace=True)
+            return df_sorted
+
+        self.names_1_widget = widgets.HTML(value=sort_df_by_last_name(self.names_1_df).to_html())
+        self.names_2_widget = widgets.HTML(value=sort_df_by_last_name(self.names_2_df).to_html())
+        self.names_3_widget = widgets.HTML(value=sort_df_by_last_name(self.names_3_df).to_html())
+        self.names_4_widget = widgets.HTML(value=sort_df_by_last_name(self.names_4_df).to_html())
+
+        # Create HBox with the widgets
+        self.names_df = widgets.HBox([self.names_1_widget, self.names_2_widget, self.names_3_widget, self.names_4_widget])
+
+        self.second_instruction_text = widgets.HTML(f"""
+        <div style="margin: 20px; padding: 10px; background-color: #eef9f9; border-left: 6px solid #77cccc;">
+             <p> Next compare the four tables with the suggested names and give a (unique) score to a how similar are the names suggested.</p></div>
+        """)
+
+        self._names_consistency_rating = widgets.IntSlider(value=5, min=1, max=10, step=1, description='(names) CONSISTENCY:', style={'description_width': 'initial'}, layout={'width': '50%'})
+        self.second_rating_instruction = widgets.HTML(value="<b>Are the names very similar to each other? Please provide a (unique) consistency score:</b>")
+        self.names_confirm_button = widgets.Button(description='Confirm', button_style='success', layout={'width': '20%'})
+        self.names_confirm_button.on_click(lambda b: self.lock_slider(b, "names"))
+        self.second_rating_line = widgets.HBox([self._names_consistency_rating, self.names_confirm_button])
+
+        self.layout = widgets.VBox([self.instruction_text, self.title, self.text_display, self.navigation_box, self.first_rating_instruction, self.first_rating_line, self.second_instruction_text, self.names_df, self.second_rating_instruction, self.second_rating_line])
     
     def update_text_display(self):
-        self.text_display.value = f"<div style='font-weight: normal; height: 400px; overflow-y: auto;'>{self.texts[self.current_index]}</div>"
+        self.text_display.value = f"<div style='font-weight: normal; height: 300px; overflow-y: auto;'>{self.texts[self.current_index]}</div>"
         self.left_button.description = "<- " + self.titles[self.current_index - 1] if self.current_index > 0 else "--"
         self.right_button.description = self.titles[self.current_index + 1] + " ->" if self.current_index < len(self.texts) - 1 else "--"
         self.title.value = f"<b>{self.titles[self.current_index]}:</b>"
@@ -167,17 +214,28 @@ class ConsistencyEvaluation:
             self.current_index += 1
             self.update_text_display()
 
-    def lock_slider(self, b):
-        self.consistency_rating.disabled = True
-        self.confirm_button.disabled = True
-        self.confirm_button.description = 'Completed ✓'
-
-        if self.save_path and self.id:
-            self.results['Consistency'].append(self.consistency_rating.value)
-            results_df = pd.DataFrame(self.results)
-            results_df.to_csv(self.save_path + f"/{self.id}_consistency_{self.index}.csv", index=False)
-            print("Thanks; your evaluation has been saved!")
-        # Logic to store the consistency score could be added here
+    def lock_slider(self, b, button_type):
+        if button_type == "formal":
+            self.formal_rating = self.formal_consistency_rating.value
+            self.formal_consistency_rating.disabled = True
+            self.formal_confirm_button.disabled = True
+            self.formal_confirm_button.description = 'Completed ✓'
+            self.flag += 1
+           
+        elif button_type == "names":
+            self.names_rating = self._names_consistency_rating.value
+            self._names_consistency_rating.disabled = True
+            self.names_confirm_button.disabled = True
+            self.names_confirm_button.description = 'Completed ✓'
+            self.flag += 1
+        
+        if self.save_path and self.id and self.flag == 2:
+            if self.formal_rating and self.names_rating:
+                self.results['Formal_Consistency'].append(self.formal_rating)
+                self.results['Names_Consistency'].append(self.names_rating)
+                results_df = pd.DataFrame(self.results)
+                results_df.to_csv(self.save_path + f"/{self.id}_consistency_{self.index}.csv", index=False)
+                print("Thanks; your evaluation has been saved!")
 
     def display(self):
         display(self.layout)
@@ -189,7 +247,7 @@ class FactualityEvaluation:
     def __init__(self, df, index, save_path=None, id=None):
         self.df = df
         self.index = index
-        self.texts = [answer for answer in self.df.loc[self.index, [f"names_in_aps_{i}" for i in range(1, 5)]]]
+        self.texts = [answer for answer in self.df.loc[self.index, [f"names_in_aps_{i}" for i in range(1, 5)]]] 
         self.current_index = 0
         self.results = {'Factuality': []}
         self.save_path = save_path
@@ -223,7 +281,7 @@ class FactualityEvaluation:
 
     def setup_widgets(self):
         self.title = widgets.HTML(value=f"<b>Answer {self.current_index + 1}:</b>")
-        self.factuality_rating = widgets.IntSlider(value=5, min=1, max=10, step=1, description='FACTUALITY:',
+        self.factuality_rating = widgets.IntSlider(value=5, min=1, max=10, step=1, description='FACTUALITY (in APS):',
                                                    style={'description_width': 'initial'}, layout={'width': '50%'})
         rating_instruction = widgets.HTML(value="<b>Does the output contain factual names? Please provide a factuality score:</b>")
         self.confirm_button = widgets.Button(description='Confirm and move to next answer', button_style='success', layout={'width': '20%'})
@@ -241,14 +299,13 @@ class FactualityEvaluation:
         if answer_text == "No names found":
             with self.graph_output:
                 clear_output(wait=True)
-                friendly_message = widgets.HTML(value="<div style='color: #31708f;'><strong>Note:</strong> No names were generated in this response. Please skip to the next answer.</div>")
-                display(friendly_message)
             with self.df_output:
                 clear_output(wait=True)
 
             # Adjust the layout to exclude the rating instruction when no names are found.
+            self.friendly_message = widgets.HTML(value="<div style='color: #31708f;'><strong>Note:</strong> No names were generated in this response. Please skip to the next answer.</div>")
             self.confirm_button.description = 'Skip to next answer -->'
-            self.layout.children = [self.instruction_text, self.title, self.graph_output, self.confirm_button]
+            self.layout.children = [self.instruction_text, self.title, self.friendly_message, self.confirm_button]
         else:
             # Include the rating instruction when names are present.
             self.layout.children = [self.instruction_text, self.title, widgets.HBox([self.graph_output, self.df_output]), rating_instruction, self.factuality_rating, self.confirm_button]
@@ -268,7 +325,7 @@ class FactualityEvaluation:
                 sizes = [full_name_present_count, unsure_count]
                 colors = ['lightgreen', 'lightcoral']
                 explode = (0.1, 0)
-                                # Function to format the label as 'absolute value (relative value%)'
+                #Function to format the label as 'absolute value (relative value%)'
                 def func(pct, allvals):
                     absolute = int(round(pct/100.*sum(allvals)))
                     return f"{absolute} ({pct:.1f}%)"
